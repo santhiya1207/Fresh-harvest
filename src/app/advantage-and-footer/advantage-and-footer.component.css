@@ -1,0 +1,79 @@
+.advantageContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0 3.2rem;
+    gap: 2.8rem;
+    margin: 3.2rem 0;
+}
+.advantageContentContainer{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    border-radius: 11px;
+    padding: 1.5rem;
+    text-align: center;
+}
+.advantageImage{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1.2rem;
+}
+.advantagesListContainer{
+    list-style-type: none;
+    text-align: center;
+}
+.listItem{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    line-height: 2rem;
+}
+.listIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: green;
+}
+.advantageTitle{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.advantageTitleFruits{
+    background-color: orange;
+    border-radius: 25rem;
+    padding: 3px 10px;
+}
+.advantageTitleVegetables{
+    background-color: green;
+    border-radius: 25rem;
+    padding: 3px 10px;
+}
+.advantageTitleDryFruits{
+    background-color: wheat;
+    border-radius: 25rem;
+    padding: 3px 10px;
+}
+.advantageTitleGreens{
+    background-color: lightgreen;
+    border-radius: 25rem;
+    padding: 3px 10px;
+}
+@media (max-width:544px){
+    .advantageContainer{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 1.6rem;
+        gap: 2.8rem;
+
+    }
+}
+@media (min-width:545px)and (max-width:944px){
+    .advantageContainer{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 2.4rem;
+        gap: 2.8rem;
+
+    }
+}
