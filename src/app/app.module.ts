@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AdvantageAndFooterComponent } from './advantage-and-footer/advantage-and-footer.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     HomePageComponent,
     AdvantageAndFooterComponent,
     FooterComponent,
+    HeaderComponent,
  
   ],
   imports: [
