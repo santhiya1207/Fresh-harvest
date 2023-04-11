@@ -1,0 +1,100 @@
+h2,
+h3 {
+    color: rgb(14, 78, 14);
+    text-align: center;
+    font-size: 1.8em;
+}
+.ourProducts{
+    color: rgb(14, 78, 14);
+    text-align: center;
+    font-size: 36px;
+    margin: 20px auto;
+    font-weight: 600;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin: 3px;
+}
+
+.row1 {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.block {
+    padding: 82px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.block:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.fa {
+    font-size: 50px;
+}
+
+.block1 {
+    background-image: url("../../assets/category-01.jpg");
+    float: inline-end;
+}
+
+.block2 {
+    background-image: url("../../assets/category-2.0.jpg");
+}
+
+.block3 {
+    background-image: url("../../assets/category-3.jpg");
+}
+
+.block4 {
+    background-image: url("../../assets/category-4.jpg");
+}
+
+.btn {
+    color: white;
+    background-color: #1b8b1be7;
+}
+.btn:hover{
+    color: forestgreen;
+    background-color: white;
+}
+
+.bg1 {
+    margin: auto;
+    width: fit-content;
+}
+
+.mb-4 {
+    padding: auto;
+    line-height: 1.728571;
+    text-align: justify;
+}
+
+.col-sm-6 {
+    width: 25%;
+    padding: 15px;
+    margin: -15px;
+}
+.g-5, .gy-5 {
+    --bs-gutter-y: 0rem;
+}
+.g-5, .gx-5 {
+    --bs-gutter-x: 3rem;
+}
+
+
+
