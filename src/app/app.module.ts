@@ -4,9 +4,10 @@ import { IonicModule } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { AdvantageAndFooterComponent } from './advantage-and-footer/advantage-and-footer.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { CategoryAdvantageComponent } from './category-advantage/category-advantage.component';
+import { CategoryComponent } from './category/category.component';
 
 
 
@@ -14,9 +15,10 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     HomePageComponent,
-    AdvantageAndFooterComponent,
     FooterComponent,
     HeaderComponent,
+    CategoryAdvantageComponent,
+    CategoryComponent,
  
   ],
   imports: [
