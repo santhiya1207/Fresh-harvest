@@ -30,7 +30,8 @@ h3 {
 }
 
 .block {
-    padding: 82px;
+    padding: 95px;
+    height: fit-content;
     text-align: center;
     color: white;
     background-size: cover;
@@ -49,7 +50,6 @@ h3 {
 
 .block1 {
     background-image: url("../../assets/category-01.jpg");
-    float: inline-end;
 }
 
 .block2 {
@@ -58,6 +58,7 @@ h3 {
 
 .block3 {
     background-image: url("../../assets/category-3.jpg");
+   
 }
 
 .block4 {
@@ -74,8 +75,7 @@ h3 {
 }
 
 .bg1 {
-    margin: auto;
-    width: fit-content;
+    padding: 0 3.2rem;
 }
 
 .mb-4 {
@@ -89,12 +89,7 @@ h3 {
     padding: 15px;
     margin: -15px;
 }
-.g-5, .gy-5 {
-    --bs-gutter-y: 0rem;
-}
-.g-5, .gx-5 {
-    --bs-gutter-x: 3rem;
-}
+
 
 
 
