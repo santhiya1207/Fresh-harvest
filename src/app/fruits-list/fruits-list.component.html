@@ -1,0 +1,13 @@
+<div class="productListContainer">
+    <div class="fruitsProductsListTitle">Fruits</div>
+    <div class="fruitsProductsListContainer">
+        <div class="fruitsProductsList" *ngFor="let fruitsList of filteredFruitsProducts">
+        <div><img class="fruitImage" src="{{fruitsList.image}}"></div>
+       <div class="fruitsNameAndPrice">
+        <div class="fruitName">{{fruitsList.productName}}</div>
+        <div class="fruitPrice">$ {{fruitsList.productPrice}}</div>
+    </div>
+        <div class="fruitDescription">{{fruitsList.description}}</div>
+    </div>
+    </div>
+</div>

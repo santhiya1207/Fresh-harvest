@@ -1,0 +1,39 @@
+.productListContainer{
+    padding: 0 3.2rem;
+}
+.fruitsProductsListTitle{
+    font-size: 36px;
+    color: rgba(2, 88, 32, 0.953);
+    font-weight: 600;
+    text-align: center;
+    margin: 25px auto;
+}
+.fruitsProductsListContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.fruitsProductsList{
+    border: 1px solid #f0f0f0;
+    padding: 1rem;   
+}
+.fruitImage{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.fruitsNameAndPrice{
+    display: flex;
+    justify-content: space-between;
+}
+.fruitName{
+    font-size: 18px;
+    font-weight: 500;
+}.fruitPrice{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(2, 88, 32, 0.953);
+}

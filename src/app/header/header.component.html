@@ -1,12 +1,22 @@
 <div class="homeHeader">
-    <!-- <img src="/assets/logo2.png" width="70px" height="70px"/>    -->
-    <div class="headerTitle">Fresh Harvest</div>
-      <div class="pagetags">
-      <div class="navbutton" [routerLink]="['/']">Home</div>
-      <div class="navbutton" [routerLink]="['/Products']">Products</div>
-      <div class="navbutton">Services</div>
-    </div>
+  <div><img src="../../assets/logo.png" class="headerLogo"></div>
+  <div class="navbar">
+    <a [routerLink]="['/']">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products</button>
+      <div class="dropdown-content">
+        <a [routerLink]="['/Fruits']" >Fruits</a>
+        <a [routerLink]="['/']">Vegetables</a>
+        <a [routerLink]="['/']">Dry Fruits</a>
+        <a [routerLink]="['/']">Greens</a>
+      </div>
+    </div> 
+    <a [routerLink]="['/']">Services</a>
+    <a [routerLink]="['/']">Login</a>
   </div>
+</div>
+
+
   <div class="MainContent">
     <router-outlet></router-outlet>
   </div>
