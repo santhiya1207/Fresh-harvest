@@ -1,0 +1,110 @@
+<div class="w-100 h-100">
+  <!-- <div class="welcomeContent">Welcome to Fresh Harvest</div> -->
+  <div class="">
+    <!-- LoginForms -->
+    <div *ngIf="loginpage">
+      <div class="row">
+        <div class="col-1">
+          <div class="loginforms">
+            <div class="loginpage">
+              <div class="titlepage">
+                <div>
+                  <h1>Welcome to <br>Fresh Harvest</h1>
+                </div><br>
+                <!-- <button class="btn btn-light signinBtn" (click)="hidecontent(false)">sign-in</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="loginform">
+            <h2>Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="userName">UserName</label>
+                <input class="form-control" id="userName" name="userName" type="text" placeholder="UserName" 
+                [(ngModel)]="userName"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" id="password" name="password"  type="text" placeholder="Password"
+                [(ngModel)]="password" />
+              </div>
+            </form>
+            <br>
+            <div>
+              <button [routerLink]="['home']"  class="btn btn-success loginBtn" (click)="login()">LOGIN</button>
+            </div>
+            <div>
+                <a><button class="btn signinBtn" (click)="hidecontent(false)">SIGN UP</button></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="siginpage">
+      <div class="row">
+        <div class="col-1">
+          <div class="signforms">
+            <div class="signpage">
+              <div class="titlepage">
+                <div>
+                  <h1>Login to <br>Fresh Harvest</h1>
+                </div><br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="signform" *ngIf="siginpage">
+            <div class="signformh2">Sigin In</div>
+            <form>
+              <!-- Name -->
+              <div class="row">
+                <div class="col-12">
+                  <label for="UserName">Name</label>
+                  <input type="text" placeholder="userName" id="UserName"/>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                  <label for="Eamil">Email</label>
+                  <input type="email" placeholder="Email" class="forEmail"  />
+                </div>
+              </div>
+              <!-- Password -->
+              <div class="row">
+                <div class="col-12">
+                  <label for="Password">Password</label>
+                  <input type="text" placeholder="Password" id="Password"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="text" placeholder="Password" id="confirmPassword"  />
+                </div>
+              </div>
+
+            </form>
+            <br>
+            <div>
+              <button class="btn btn-success loginBtn">REGISTER</button>
+            </div>
+            <div> 
+              <a><button class="btn signinBtn" (click)="showcontent(false)">SIGN IN</button></a>
+              
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
