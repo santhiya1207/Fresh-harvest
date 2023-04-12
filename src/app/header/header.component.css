@@ -1,25 +1,20 @@
 .homeHeader {
-    /* border: 2px solid rgb(234, 229, 229); */
     height: 80px;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.29);
-    margin-top: -8px;
-    padding: 10px;
-      background-image: url('/assets/bg.jpg');
+    /* box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.29); */
+    /* background-image: url('/assets/bg.jpg'); */
     background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  /* .logo{
-    background-image: url('/assets/logo.png');
-    background-size: 100%;
+    /* background-size: 100%; */
+    background-color: rgba(2, 88, 32, 0.953);;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
-    height: 60px;
-    width: 60px;
-   
-    background-repeat: no-repeat;
-  } */
-  img{
-    margin-left: 10px;
+    align-items: center;
+    justify-content: space-between;
   }
+  /* img{
+    margin-left: 10px;
+  } */
   
   h3 {
     float: left;
@@ -29,11 +24,12 @@
     display: flex;
   }
   
-  h4 {
+  .navbutton {
     float: left;
-    color:  rgba(2, 88, 32, 0.953);
+    color: white;
+    font-size: 15pt;
+    margin-right: 15px;
     padding: 5px;
-    font-size: 14pt;
   }
   
   h2 {
@@ -41,26 +37,30 @@
     color: azure;
     padding: 5px;
     font-size: 40px;
-    font-family: monospace;
     margin-top: 100px;
   }
   
   .pagetags {
     float: right;
-    padding: 10px;
-   
   }
   
-  .pagetags .btn1:hover {
-    border: 2px solid  rgba(2, 88, 32, 0.953);
+  .pagetags .navbutton:hover {
+    border: 2px solid  #fff;
     background-color: transparent;
-    color:  rgba(2, 88, 32, 0.953);
+    color: #fff;
     font-weight: 900;
-    box-shadow: 3px 8px 8px 0px rgba(246, 246, 246, 0.242);
+    border-radius: 5px;
   }
   
-  .pagetags .btn1:hover::first-letter {
+  .pagetags .navbutton:hover::first-letter {
     font-size: 20px;
-    color:  rgba(2, 88, 32, 0.953);
+    color:  #fff;
+  }
+  .headerTitle{
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 30px;
+    color: #fff;
   }
   

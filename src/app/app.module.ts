@@ -17,8 +17,7 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
     HomePageComponent,
     HeaderComponent,
     LoginpageComponent,
-    
- 
+     
   ],
   imports: [
     BrowserModule,
