@@ -1,21 +1,13 @@
-h2,
-h3 {
-    color: rgb(14, 78, 14);
+.benefits{
     text-align: center;
-    font-size: 1.8em;
-}
-.ourProducts{
-    color: rgb(14, 78, 14);
-    text-align: center;
+    margin: 2.4rem auto;
     font-size: 36px;
-    margin: 20px auto;
+    color: rgba(2, 88, 32, 0.953);;
     font-weight: 600;
 }
-
-.column {
-    float: left;
-    width: 25%;
-    padding: 10px;
+.col-auto {
+    padding: 8px;
+    padding-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -79,18 +71,45 @@ h3 {
     padding: 0 3.2rem;
 }
 
-.mb-4 {
-    padding: auto;
-    line-height: 1.728571;
-    text-align: justify;
+.section-title {
+    position: relative;
+    display: inline-block;
 }
 
-.col-sm-6 {
-    width: 25%;
-    padding: 15px;
-    margin: -15px;
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
 }
 
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
 
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+.abt{
+    height: 428px;
+    width: 100%;
+    background-image: url("img/abt1.png");
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
