@@ -1,12 +1,21 @@
 <div class="homeHeader">
-    <img src="/assets/logo2.png" width="70px" height="70px"/>   
-       <div class="pagetags">
-      <h4 class="btn button" [routerLink]="['/home']">Home</h4>
-      <h4 class="btn button" [routerLink]="['/product']">Product</h4>
-      <h4 class="btn button">Services</h4>
+  <div><img src="../../assets/logo.png" class="headerLogo" /></div>
+  <div class="navbar">
+    <a [routerLink]="['/']">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products</button>
+      <div class="dropdown-content">
+        <a [routerLink]="['/Fruits']">Fruits</a>
+        <a [routerLink]="['/Vegetables']">Vegetables</a>
+        <a [routerLink]="['/DryFruits']">Dry Fruits</a>
+        <a [routerLink]="['/Greens']">Greens</a>
+      </div>
     </div>
+    <a [routerLink]="['/']">Services</a>
+    <a [routerLink]="['/Login']">Login</a>
   </div>
-  <div class="MainContent">
-    <router-outlet></router-outlet>
-  </div>
-  
+</div>
+
+<div class="MainContent">
+  <router-outlet></router-outlet>
+</div>
