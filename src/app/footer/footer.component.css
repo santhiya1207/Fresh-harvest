@@ -1,0 +1,100 @@
+.footer{
+    padding: 9.6rem 0;
+    border-top: 1px solid #eee;
+}
+.footerContainer{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+    padding: 0 3.2rem;
+    column-gap: 4.8rem;
+}
+.footerLogoTitle,.contactTitle,.menuTitle,.helpTitle{
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #5f5858;
+    font-weight: bold;
+}
+.footerLogo{
+    width: 150px;
+display: block;
+margin-bottom: 20px;
+}
+.mediaImages{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+}
+.copyRight{
+    font-size: 14px;
+    color: #767676;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.allRights{
+    font-size: 14px;
+    color: #767676;
+    line-height: 1.6;
+}
+.mediaIcons{
+    width: 24px;
+    height: 24px;
+}
+.address{
+    font-size: 15px;
+    color: #767676;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.telephone{
+    font-size: 15px;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 25px;
+    display: block;
+}
+.mail{
+    font-size: 15px;
+    color: #767676;
+    text-decoration: none;
+}
+.menuList{
+    list-style-type: none;
+    padding: 0;
+}
+.menuList li a{
+    text-decoration: none;
+    color: #767676;
+    line-height: 2.5;
+}
+.helpList{
+    list-style-type: none;
+    padding: 0;
+}
+.helpList li a{
+    color: #767676;
+    line-height: 2.5;
+    text-decoration: none;
+}
+@media(max-width:1130px){
+    .footer{
+        padding: 8.0rem 0;
+    }
+    .footerContainer{
+        grid-template-columns: repeat(2,1.5fr);
+        padding: 0 3.2rem;
+        column-gap: 4.8rem;
+        row-gap: 3.2rem;
+    }   
+}
+@media(max-width:500px){
+    .footer{
+        padding: 6.4rem 0;
+    }
+    .footerContainer{
+        grid-template-columns: repeat(1,1.5fr);
+        padding: 0 4.8rem;
+        column-gap: 4.8rem;
+        row-gap: 3.2rem;
+    }   
+}

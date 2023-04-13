@@ -1,0 +1,52 @@
+<div class="container p-0">
+    <div class="row">
+        <!-- left side image -->
+      <div class="col-6 p-0 w-50 h-100 ">
+        <div class="loginLeftSide">
+          <div class="title">
+            Welcome to <br>Fresh Harvest
+          </div>
+        </div>
+        <br>
+      </div>
+      <!-- Login page input box content -->
+      <div class="col-6 col-lg-6 p-0 w-50">
+        <div class="loginRightSide">
+          <h2>Login</h2>
+          <form class="form-group" [formGroup]="loginform">
+            <!-- userName -->
+            <div class="form-group">
+              <label for="userName">UserName</label>
+              <input class="form-control" id="userName" type="text" placeholder="UserName"
+              name="userName" formControlName="userName" [ngClass]="{'is-invalid': submitted && f['userName'].errors}"
+              [(ngModel)]="username"   required />
+            </div>
+        <!-- userName validation -->
+             <div class="text text-danger d-flex justify-content-center" *ngIf="submitted && f['userName'].errors">
+              <div *ngIf="f['userName'].errors['required']" >UserName is Required</div>
+             </div>
+                <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input class="form-control password" id="password" type="password" placeholder="Password"
+              name="password"  formControlName="password" [ngClass]="{'is-invalid': submitted && f['password'].errors}"
+              [(ngModel)]="password" required />
+            </div>
+            <!-- password Validation -->
+            <div class="text text-danger d-flex justify-content-center" *ngIf="submitted && f['password'].errors">
+              <div *ngIf="f['password'].errors['required']" >Enter Valid Password</div>
+             </div>
+
+             <!-- login button -->
+            <div>
+              <button class="btn btn-success loginBtn" (click)="onSubmit()">Login</button>
+            </div>
+            <!-- Signup button -->
+            <div>
+              <a><button class="btn signinBtn" (click)="hidecontent(false)">SIGN UP</button></a>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>

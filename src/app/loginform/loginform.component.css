@@ -1,0 +1,111 @@
+.container {
+    /* border: 2px solid rgba(2, 88, 32, 0.953); */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  
+  }
+  
+  .loginLeftSide {
+    width: 500px;
+    height: 100%;
+    background-image: url('/assets/berry.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: 0px 8px 8px 2px rgba(81, 81, 81, 0.571);
+    border: 2px solid rgba(23, 2, 59, 0.627);
+    /* border-top: 2px solid rgba(23, 2, 59, 0.627);
+    border-bottom: 2px solid rgba(23, 2, 59, 0.627); */
+  }
+  
+  .loginLeftSide .title {
+    font-size: large;
+    color: rgba(241, 244, 242, 0.953);
+    margin-left: 40px;
+    margin-top: 150px;
+    float: left;
+    font-weight: 900;
+    padding: 8px;
+    justify-items: center;
+    font-size: 50px;
+    display: flex;
+  }
+  
+  .loginRightSide {
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 8px 8px 2px rgba(81, 81, 81, 0.571);
+    border: 2px solid rgba(23, 2, 59, 0.627);
+    /* border-top: 2px solid rgba(23, 2, 59, 0.627);
+    border-bottom: 2px solid rgba(23, 2, 59, 0.627); */
+  
+  }
+  
+  .loginRightSide h2 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    color: rgba(2, 88, 32, 0.953);
+  }
+  
+  label {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    color: rgba(2, 88, 32, 0.953);
+  }
+  
+  input[type=text] {
+    border: 1px solid rgba(2, 88, 32, 0.953);
+    color: rgba(2, 88, 32, 0.953);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 120px;
+  }
+  input[type=password] {
+    border: 1px solid rgba(2, 88, 32, 0.953);
+    color: rgba(2, 88, 32, 0.953);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 120px;
+  }
+  .loginBtn {
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+    width: 50%;
+    margin-top: 40px
+  }
+  .signinBtn{
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin-right: 190px;
+     width: 25%;
+    margin-top: 20px;
+    margin-left: 70px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: rgba(2, 88, 32, 0.953);
+  }
+  .signinBtn:hover{
+      font-size: 20px;
+      font-weight: 500;
+  
+  }
+  
