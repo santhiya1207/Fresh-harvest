@@ -1,5 +1,5 @@
 .productListContainer{
-    padding: 0 3.2rem;
+    padding: 0 4.8rem;
 }
 .fruitsProductsListTitle{
     font-size: 36px;
@@ -13,10 +13,11 @@
     grid-template-columns: repeat(4,1fr);
     column-gap: 2rem;
     row-gap: 2rem;
+    margin: 3.6rem auto;
 }
 .fruitsProductsList{
     border: 1px solid #f0f0f0;
-    padding: 1rem;   
+    padding: 1.5rem;   
 }
 .fruitImage{
     width: 150px;
@@ -25,15 +26,50 @@
     margin: auto;
     margin-bottom: 10px;
 }
-.fruitsNameAndPrice{
-    display: flex;
-    justify-content: space-between;
-}
 .fruitName{
-    font-size: 18px;
-    font-weight: 500;
-}.fruitPrice{
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
+}
+.fruitPrice{
+    font-size: 14px;
     font-weight: 500;
     color: rgba(2, 88, 32, 0.953);
+}
+.fruitdelivery,.fruitWeight{
+    font-size: 14px;
+}
+.BuyCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.plusIcon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.fruitsAddButton{
+    border: 1px solid rgba(2, 88, 32, 0.953);
+    border-radius: 25px;
+    padding: 2px 10px;
+    background: none;
+    color: rgba(2, 88, 32, 0.953);
+    font-weight: 500;
+}
+.fruitsAddButton:hover{
+    background-color: rgba(2, 88, 32, 0.953);
+    color: #fff;
+}
+
+@media (max-width:500px){
+    .productListContainer{
+        padding: 0 3.6rem;
+    }
+    .fruitsProductsListContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin: 3.6rem auto;
+    }
 }

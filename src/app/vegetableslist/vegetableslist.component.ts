@@ -10,15 +10,13 @@ export class VegetableslistComponent {
   vegetableProducts: any[] = [];
   filteredVegetableProducts: any[] = [];
 
-  constructor(private _fruitsProductsServie: ProductserviceService) {
+  constructor(private _vegetablesProductsServie: ProductserviceService) {
     console.log("Constructor Called");
   }
   ngOnInit() {
-    this.vegetableProducts = this._fruitsProductsServie.getProduct();
-    console.log("fruit", this.vegetableProducts);
+    this.vegetableProducts = this._vegetablesProductsServie.getProduct();
     this.filteredVegetableProducts = this.vegetableProducts.filter(
-      (fruit) => fruit.productCategory === "Fruits"
+      (vegetable) => vegetable.productCategory === "Vegetables"
     );
-    console.log("filtered fruits", this.filteredVegetableProducts);
   }
 }

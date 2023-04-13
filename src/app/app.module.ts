@@ -11,6 +11,8 @@ import { CategoryAdvantageComponent } from './category-advantage/category-advant
 import { CategoryComponent } from './category/category.component';
 import { FruitsListComponent } from './fruits-list/fruits-list.component';
 import { VegetableslistComponent } from './vegetableslist/vegetableslist.component';
+import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
+import { GreenlistComponent } from './greenlist/greenlist.component';
 
 
 
@@ -24,6 +26,8 @@ import { VegetableslistComponent } from './vegetableslist/vegetableslist.compone
     CategoryComponent,
     FruitsListComponent,
     VegetableslistComponent,
+    DryFruitsListComponent,
+    GreenlistComponent,
  
   ],
   imports: [
