@@ -13,6 +13,8 @@ import { FruitsListComponent } from './fruits-list/fruits-list.component';
 import { VegetableslistComponent } from './vegetableslist/vegetableslist.component';
 import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
 import { GreenlistComponent } from './greenlist/greenlist.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -28,13 +30,16 @@ import { GreenlistComponent } from './greenlist/greenlist.component';
     VegetableslistComponent,
     DryFruitsListComponent,
     GreenlistComponent,
+    LoginPageComponent,
  
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    IonicModule
+    IonicModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
