@@ -1,0 +1,32 @@
+<div class="productListContainer">
+    <div class="vegetablesProductsListTitle">Buy Your Products</div>
+    <div class="vegetablesProductsListContainer">
+      <div
+        class="vegetablesProductsList"
+        *ngFor="let vegetableList of filteredVegetableProducts"
+      >
+        <div><img class="vegetablesImage" src="{{ vegetableList.image }}" /></div>
+        <div class="vegetablesName">{{ vegetableList.productName }}</div>
+  
+        <div class="BuyCard">
+          <div class="priceCard">
+            <div class="vegetablesPrice">$ {{ vegetableList.productPrice }}</div>
+            <div class="vegetablesWeight">{{ vegetableList.weight }}</div>
+            <div class="vegetablesdelivery">{{ vegetableList.delivery }}</div>
+          </div>
+  
+          <div class="addCard">
+            <button class="vegetablesAddButton">Add 
+              <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 plusIcon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg></span>
+              </button>
+            
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
