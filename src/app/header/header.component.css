@@ -1,7 +1,7 @@
 .homeHeader {
   height: 80px;
   background-color: white;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3); */
   position: sticky;
   top: 0;
   z-index: 1;
@@ -31,7 +31,7 @@
 .dropbtn {
   color: black;
   background: none;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   padding: 5px 20px;
@@ -77,4 +77,8 @@
   background-color: #3e8e41;
   border-radius: 25px;
   color: #fff;
+}
+
+header.is-scrolled {
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
 }

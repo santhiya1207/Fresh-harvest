@@ -7,10 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
-
-
 import { LoginformComponent } from './loginform/loginform.component';
-
+import { FooterComponent } from './footer/footer.component';
 import { CategoryAdvantageComponent } from './category-advantage/category-advantage.component';
 import { CategoryComponent } from './category/category.component';
 import { FruitsListComponent } from './fruits-list/fruits-list.component';
@@ -36,6 +34,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     DryFruitsListComponent,
     GreenlistComponent,
     LoginPageComponent,
+    FooterComponent,
  
   ],
   imports: [

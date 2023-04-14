@@ -2,7 +2,14 @@
     text-align: center;
     margin: 2.4rem auto;
     font-size: 36px;
-    color: rgba(2, 88, 32, 0.953);;
+    color: rgba(2, 88, 32, 0.953);
+    font-weight: 600;
+}
+.who{
+    text-align: center;
+    margin: auto auto 1.4rem auto;
+    font-size: 36px;
+    color: #fff;
     font-weight: 600;
 }
 .col-auto {
@@ -42,20 +49,28 @@
 
 .block1 {
     background-image: url("../../assets/category-01.jpg");
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .block2 {
     background-image: url("../../assets/category-2.0.jpg");
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .block3 {
     background-image: url("../../assets/category-3.jpg");
     height: 229px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
    
 }
 
 .block4 {
     background-image: url("../../assets/category-4.jpg");
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .btn {
@@ -106,10 +121,15 @@
 .abt{
     height: 428px;
     width: 100%;
-    background-image: url("img/abt1.png");
+    background-image: url("../../assets/abt1.png");
     border: none;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
+.aboutUs{
+    background-color: forestgreen;
+    color: #fff;
+}
+.whoContainer{
+    margin: 2rem auto;
+}

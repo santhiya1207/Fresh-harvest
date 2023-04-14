@@ -58,7 +58,7 @@ export class LoginformComponent {
     if(this.username=='admin' && this.password=='admin'){
       alert("Login Successfull");
       this.loginform.reset();
-      this.router.navigate(['/home']);
+      this.router.navigate(['/Home']);
     }
     else{
       alert("Invalid data");
