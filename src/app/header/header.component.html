@@ -1,4 +1,4 @@
-<div class="homeHeader">
+<header class="homeHeader" [class.is-scrolled]="isScrolled">
   <div><img src="../../assets/logo.png" class="headerLogo" /></div>
   <div class="navbar">
     <a [routerLink]="['/']">Home</a>
@@ -14,7 +14,7 @@
     <a [routerLink]="['/']">Services</a>
     <a [routerLink]="['/Login']">Login</a>
   </div>
-</div>
+</header>
 
 <div class="MainContent">
   <router-outlet></router-outlet>

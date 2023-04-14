@@ -42,20 +42,24 @@
 
 .block1 {
     background-image: url("../../assets/category-01.jpg");
+    cursor: pointer;
 }
 
 .block2 {
     background-image: url("../../assets/category-2.0.jpg");
+    cursor: pointer;
 }
 
 .block3 {
     background-image: url("../../assets/category-3.jpg");
     height: 229px;
+    cursor: pointer;
    
 }
 
 .block4 {
     background-image: url("../../assets/category-4.jpg");
+    cursor: pointer;
 }
 
 .btn {
@@ -106,7 +110,7 @@
 .abt{
     height: 428px;
     width: 100%;
-    background-image: url("img/abt1.png");
+    background-image: url("../../assets/abt1.png");
     border: none;
     background-size: cover;
     background-repeat: no-repeat;
