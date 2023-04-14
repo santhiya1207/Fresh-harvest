@@ -25,7 +25,8 @@ export class LoginformComponent {
   // form group
   loginform=new FormGroup({
     userName:new FormControl(''),
-    password:new FormControl('')
+    password:new FormControl(''),
+    
   })
 
   constructor (private lf:FormBuilder,private router:Router){}
@@ -33,7 +34,8 @@ export class LoginformComponent {
   ngOnInit(): void {
     this.loginform=this.lf.group({
         userName:['',[Validators.required]],
-        password:['',[Validators.required]]
+        password:['',[Validators.required]],
+       
     })
   }
   get f():{[key:string]:AbstractControl}{

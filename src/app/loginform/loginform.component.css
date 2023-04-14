@@ -5,13 +5,16 @@
     margin-top: 50px;
   
   }
-  
+  .input{
+    text-align: center;
+  }
   .loginLeftSide {
     width: 500px;
     height: 100%;
     background-image: url('/assets/berry.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    position:sticky;
     margin: 0 !important;
     padding: 0 !important;
     box-shadow: 0px 8px 8px 2px rgba(81, 81, 81, 0.571);
@@ -64,7 +67,7 @@
     color: rgba(2, 88, 32, 0.953);
   }
   
-  input[type=text] {
+.textbox {
     border: 1px solid rgba(2, 88, 32, 0.953);
     color: rgba(2, 88, 32, 0.953);
     border-radius: 20px;
@@ -72,7 +75,7 @@
     text-align: center;
     margin-left: 120px;
   }
-  input[type=password] {
+  .passwordfield{
     border: 1px solid rgba(2, 88, 32, 0.953);
     color: rgba(2, 88, 32, 0.953);
     border-radius: 20px;
@@ -92,20 +95,209 @@
   .signinBtn{
     border-radius: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    float: right;
-    margin-right: 190px;
-     width: 25%;
-    margin-top: 20px;
-    margin-left: 70px;
+    float: left;
+    width: 25%;
+    margin-top: 10px;
     font-weight: 500;
+    margin-left: 180px;
     text-decoration: underline;
     color: rgba(2, 88, 32, 0.953);
   }
-  .signinBtn:hover{
-      font-size: 20px;
-      font-weight: 500;
-  
+  .signupLeftSide {
+    width: 500px;
+    height: 500px;
+    background-image: url('/assets/grape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: 0px 8px 8px 2px rgba(81, 81, 81, 0.571);
+    border: 2px solid rgba(23, 2, 59, 0.627);
+    /* border-top: 2px solid rgba(23, 2, 59, 0.627);
+    border-bottom: 2px solid rgba(23, 2, 59, 0.627); */
   }
   
+  .signupLeftSide .title {
+    font-size: large;
+    color: rgba(241, 244, 242, 0.953);
+    margin-left: 40px;
+    margin-top: 150px;
+    float: left;
+    font-weight: 900;
+    padding: 8px;
+    justify-items: center;
+    font-size: 50px;
+    display: flex;
+  }
+  
+  .signupRightSide {
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 8px 8px 2px rgba(81, 81, 81, 0.571);
+    border: 2px solid rgba(23, 2, 59, 0.627);
+    /* border-top: 2px solid rgba(23, 2, 59, 0.627);
+    border-bottom: 2px solid rgba(23, 2, 59, 0.627); */
+  
+  }
+
+  .signupRightSide h2 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    margin-top: 05px;
+    color: rgba(2, 88, 32, 0.953);
+  }
+
+  .signupRightSide  label {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    color: rgba(2, 88, 32, 0.953);
+  }
+
+ /* .signupRightSide input[type=text] {
+    border: 1px solid rgba(2, 88, 32, 0.953);
+    color: rgba(2, 88, 32, 0.953);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 120px;
+  }
+  .signupRightSide input[type=password] {
+    border: 1px solid rgba(2, 88, 32, 0.953);
+    color: rgba(2, 88, 32, 0.953);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 120px;
+  } */
+  .signupRightSide .loginBtn{
+    margin-top: 20px;
+  }
+
+@media only screen and (max-width: 1200px) {
+  .loginLeftSide{
+    width: 100%;
+  }
+  .loginRightSide{
+    width: 100%;
+  }
+  .signupLeftSide{
+    width: 100%;
+  }
+  .signupRightSide{
+    width: 100%;
+  }
+ .textbox{
+  margin-left: 100px;
+ }
+ .passwordfield{
+  margin-left: 100px;
+ }
+ .loginBtn{
+  margin-left: 100px;
+ }
+ .signinBtn{
+  margin-left: 140px;
+ }
+ 
+}
+@media only screen and (max-width: 1000px) {
+  .loginLeftSide{
+    width: 100%;
+  }
+  .loginRightSide{
+    width: 100%;
+  }
+  .signupLeftSide{
+    width: 100%;
+  }
+  .signupRightSide{
+    width: 100%;
+  }
+ .textbox{
+  margin-left: 100px;
+ }
+ .passwordfield{
+  margin-left: 100px;
+ }
+ .loginBtn{
+  margin-left: 100px;
+ }
+ .signinBtn{
+  
+ }
+ 
+}
+@media only screen and (max-width: 800px) {
+  .loginLeftSide{
+    width: 100%;
+  }
+  .loginLeftSide .title{
+    font-weight: 700;
+    padding: 1px;
+    margin-top: 20px;
+   }
+  .loginRightSide{
+    width: 100%;
+  }
+  .signupLeftSide{
+    width: 100%;
+  }
+  .signupLeftSide .title{
+    font-weight: 700;
+    padding: 1px;
+    margin-top: 20px;
+  }
+  .signupRightSide{
+    width: 100%;
+  }
+  .textbox{
+    margin-left: 80px;
+   }
+   .passwordfield{
+    margin-left: 80px;
+   }
+   .loginBtn{
+    margin-left: 80px;
+   }
+   .signinBtn{
+    margin-left: 110px;
+   }
+}
+@media only screen and (max-width: 600px) {
+  .loginLeftSide{
+    width: 100%;
+  }
+  .loginLeftSide .title{
+   font-weight: 500;
+   padding: 1px;
+  }
+  .loginRightSide{
+    width: 100%;
+  }
+  .signupLeftSide{
+    width: 100%;
+  }
+  .signupRightSide{
+    width: 100%;
+  }
+  .textbox{
+    margin-left: 80px;
+   }
+   .passwordfield{
+    margin-left: 80px;
+   }
+   .loginBtn{
+    margin-left: 80px;
+   }
+   .signinBtn{
+    
+   }
+}
