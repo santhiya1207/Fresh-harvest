@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4,1fr);
     padding: 0 3.2rem;
     gap: 2.8rem;
-    margin: 3.2rem 0;
+    margin: 2.8rem 0;
     
 }
 .advantageContentContainer{
@@ -49,9 +49,8 @@
     border-radius: 25rem;
     padding: 3px 10px;
 }
-.benefits{
+.benefitsTitle{
     text-align: center;
-    margin: 2.4rem auto;
     font-size: 36px;
     color: rgba(2, 88, 32, 0.953);
     font-weight: 600;

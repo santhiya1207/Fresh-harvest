@@ -1,7 +1,7 @@
 <header class="homeHeader" [class.is-scrolled]="isScrolled">
   <div><img src="../../assets/logo.png" class="headerLogo" /></div>
   <div class="navbar">
-    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/Home']">Home</a>
     <div class="dropdown">
       <button class="dropbtn">Products</button>
       <div class="dropdown-content">
@@ -11,11 +11,9 @@
         <a [routerLink]="['/Greens']">Greens</a>
       </div>
     </div>
-    <a [routerLink]="['/']">Services</a>
+    <a [routerLink]="['/Home']">Services</a>
     <a [routerLink]="['/Login']">Login</a>
   </div>
-</header>
+</header>  
 
-<div class="MainContent">
-  <router-outlet></router-outlet>
-</div>
+  
