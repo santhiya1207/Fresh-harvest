@@ -1,5 +1,58 @@
 <div class="productListContainer">
-    <div class="vegetablesProductsListTitle">Buy Your Products</div>
+  <section class="search-sec">
+    <div class="container">
+      <ul class="navbar-nav mr-auto ml-auto">
+        <li class="nav-item">
+          <div class="justify-content-md-center">
+      <form  class="form-inline my-2 my-lg-0 my-lg-0">
+        <div class="row center">
+          <div class="col-lg-12">
+            <div class="row ">
+              <div class="col p-0">
+                <input type="text" class="form-control search-slt" placeholder="Search your fruit name / price " style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"(change)="getCategoryDetails($event)" [(ngModel)]="productfilter">
+              </div>
+              <div class="col-lg-3 p-0">
+                <button type="button" class="btn btn-success wrn-btn" style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="vegetablesProductsListContainer">
+    <div class="vegetablesProductsList" *ngFor="let vegetableList of products">
+      <div><img class="vegetablesImage" src="{{ vegetableList.image }}" /></div>
+      <div class="vegetablesName">{{ vegetableList.productName }}</div>
+
+      <div class="BuyCard">
+        <div class="priceCard">
+          <div class="vegetablesPrice">$ {{ vegetableList.productPrice }}</div>
+          <div class="vegetablesWeight">{{ vegetableList.weight }}</div>
+          <div class="vegetablesdelivery">{{ vegetableList.delivery }}</div>
+        </div>
+
+        <div class="addCard">
+          <button class="vegetablesAddButton">Add
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 plusIcon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg></span>
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="vegetablesProductsListTitle">Our Harvest</div>
     <div class="vegetablesProductsListContainer">
       <div
         class="vegetablesProductsList"
@@ -28,5 +81,4 @@
         </div>
       </div>
     </div>
-  </div>
   

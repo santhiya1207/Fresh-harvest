@@ -9,6 +9,8 @@ import { ProductserviceService } from '../productservice.service';
 export class VegetableslistComponent {
   vegetableProducts: any[] = [];
   filteredVegetableProducts: any[] = [];
+  products:any[]=[];
+  productfilter: string = "";
 
   constructor(private _vegetablesProductsServie: ProductserviceService) {
     console.log("Constructor Called");
@@ -18,5 +20,10 @@ export class VegetableslistComponent {
     this.filteredVegetableProducts = this.vegetableProducts.filter(
       (vegetable) => vegetable.productCategory === "Vegetables"
     );
+  }
+  getCategoryDetails(inputvalue: any): any {
+    console.log(this.vegetableProducts);
+    this.productfilter = inputvalue.target.value;
+    this.products = this.vegetableProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
   }
 }
