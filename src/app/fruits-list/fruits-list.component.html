@@ -24,8 +24,7 @@
     </div>
   </section>
 
-
-  <div class="fruitsProductsListContainer">
+  <div class="fruitsProductsListContainer" style="margin-top: 0px;">
     <div class="fruitsProductsList" *ngFor="let fruitsList of products">
       <div><img class="fruitImage" src="{{ fruitsList.image }}" /></div>
       <div class="fruitName">{{ fruitsList.productName }}</div>
@@ -45,15 +44,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
               </svg></span>
           </button>
-
-
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><br><br><br>
 
-  <div class="fruitsProductsListTitle">Our Harvest</div>
+  <div class="fruitsProductsListTitle" style="margin-top: -120px;">Our Harvest</div>
   <div class="fruitsProductsListContainer">
     <div class="fruitsProductsList" *ngFor="let fruitsList of filteredFruitsProducts">
       <div><img class="fruitImage" src="{{ fruitsList.image }}" /></div>
