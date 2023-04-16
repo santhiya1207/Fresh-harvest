@@ -33,7 +33,8 @@ export class LoginformComponent implements OnInit{
 
   constructor (public lf:FormBuilder,
     private router:Router,
-    private LoginService:LoginService, private ngZone:NgZone){
+    private LoginService:LoginService, 
+    private ngZone:NgZone){
       this.loginform=this.lf.group({
         userName:['',[Validators.required]],
         password:['',[Validators.required]],
@@ -41,7 +42,8 @@ export class LoginformComponent implements OnInit{
     })
     }
 
-  ngOnInit(): void {   
+  ngOnInit(): void {
+   
   }
   get f():{[key:string]:AbstractControl}{
     return this.loginform.controls;
@@ -74,6 +76,9 @@ export class LoginformComponent implements OnInit{
  
 
   onSubmit():any{
+    this.submitted=true;
+    if(this.loginform.invalid)
+    return console.log(JSON.stringify(this.loginform.value,null,2));
     console.log(this.loginform.value);
     this.LoginService.AddLogin(this.loginform.value).subscribe(
       ()=>{console.log('Data added');
