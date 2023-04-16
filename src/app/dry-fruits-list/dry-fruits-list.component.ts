@@ -9,6 +9,8 @@ import { ProductserviceService } from '../productservice.service';
 export class DryFruitsListComponent {
   dryFruitsProducts: any[] = [];
   filteredDryFruitsProducts: any[] = [];
+  products:any[]=[];
+  productfilter: string = "";
 
   constructor(private _vegetablesProductsServie: ProductserviceService) {
     console.log("Constructor Called");
@@ -18,5 +20,10 @@ export class DryFruitsListComponent {
     this.filteredDryFruitsProducts = this.dryFruitsProducts.filter(
       (dryFruits) => dryFruits.productCategory === "Dryfruits"
     );
+  }
+  getCategoryDetails(inputvalue: any): any {
+    console.log(this.dryFruitsProducts);
+    this.productfilter = inputvalue.target.value;
+    this.products = this.dryFruitsProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
   }
 }

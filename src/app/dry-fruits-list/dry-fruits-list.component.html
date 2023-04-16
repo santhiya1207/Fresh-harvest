@@ -1,5 +1,60 @@
 <div class="productListContainer">
-    <div class="dryFruitsProductsListTitle">Buy Your Products</div>
+  <div class="productListContainer">
+    <section class="search-sec">
+      <div class="container">
+        <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item">
+            <div class="justify-content-md-center">
+        <form  class="form-inline my-2 my-lg-0 my-lg-0">
+          <div class="row center">
+            <div class="col-lg-12">
+              <div class="row ">
+                <div class="col p-0">
+                  <input type="text" class="form-control search-slt" placeholder="Search your fruit name / price" style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"(change)="getCategoryDetails($event)" [(ngModel)]="productfilter">
+                </div>
+                <div class="col-lg-3 p-0">
+                  <button type="button" class="btn btn-success wrn-btn" style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        </div>
+        </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="dryFruitsProductsListContainer">
+      <div
+        class="dryFruitsProductsList"
+        *ngFor="let dryFruitsList of products"
+      >
+        <div><img class="dryFruitsImage" src="{{ dryFruitsList.image }}" /></div>
+        <div class="dryFruitsName">{{ dryFruitsList.productName }}</div>
+  
+        <div class="BuyCard">
+          <div class="priceCard">
+            <div class="dryFruitsPrice">$ {{ dryFruitsList.productPrice }}</div>
+            <div class="dryFruitsWeight">{{ dryFruitsList.weight }}</div>
+            <div class="dryFruitsdelivery">{{ dryFruitsList.delivery }}</div>
+          </div>
+  
+          <div class="addCard">
+            <button class="dryFruitsAddButton">Add 
+              <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 plusIcon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg></span>
+              </button>
+            
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dryFruitsProductsListTitle">Our Harvest</div>
     <div class="dryFruitsProductsListContainer">
       <div
         class="dryFruitsProductsList"

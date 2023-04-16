@@ -9,18 +9,9 @@
           <div class="col-lg-12">
             <div class="row ">
               <div class="col p-0">
-                <input type="text" class="form-control search-slt" placeholder="Search your fruit ...." style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"(change)="getCategoryDetails($event)" [(ngModel)]="productfilter">
+                <input type="text" class="form-control search-slt" placeholder="Search your fruit name / price " style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"(change)="getCategoryDetails($event)" [(ngModel)]="productfilter">
               </div>
               <div class="col-lg-3 p-0">
-                <select class="form-control search-slt" >
-                  <option>Price</option>
-                  <option (click)="price1()">Rs.49 and Below</option>
-                  <option (click)="price2()"> Rs.50 - Rs.99</option>
-                  <option (click)="price3()"> Rs.100 - Rs.499</option>
-                  <option (click)="price4()"> Rs.500 and above</option>
-                </select>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                 <button type="button" class="btn btn-success wrn-btn" style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;">Search</button>
               </div>
             </div>

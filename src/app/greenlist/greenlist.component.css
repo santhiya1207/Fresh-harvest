@@ -60,3 +60,44 @@
     background-color: rgba(2, 88, 32, 0.953);
     color: #fff;
 }
+
+@media (max-width:500px){
+    .productListContainer{
+        padding: 0 3.6rem;
+    }
+    .fruitsProductsListContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin: 3.6rem auto;
+    }
+}
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+:focus {
+    outline: 0;
+    box-shadow:none;
+  }
+
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
