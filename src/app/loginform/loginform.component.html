@@ -19,7 +19,7 @@
               <label for="userName">UserName</label>
               <input class="form-control textbox" id="userName" type="text" placeholder="UserName"
               name="userName" formControlName="userName" [ngClass]="{'is-invalid': submitted && f['userName'].errors}"
-              [(ngModel)]="username"   required />
+              [(ngModel)]="userName"   required />
             </div>
         <!-- userName validation -->
              <div class="text text-danger d-flex justify-content-center" *ngIf="submitted && f['userName'].errors">
@@ -72,7 +72,7 @@
             <label for="userName">UserName</label>
             <input class="form-control textbox" id="userName" type="text" placeholder="UserName"
             name="userName" formControlName="userName" [ngClass]="{'is-invalid': submitted && f['userName'].errors}"
-            [(ngModel)]="username"   required />
+            [(ngModel)]="userName"   required />
           </div>
       <!-- userName validation -->
            <div class="text text-danger d-flex justify-content-center col-12" *ngIf="submitted && f['userName'].errors">
