@@ -105,6 +105,7 @@
         padding: 0px 0.5rem;
     }
     .fruitsProductsListContainer{
+        margin-top: -10px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         column-gap: 1rem;
