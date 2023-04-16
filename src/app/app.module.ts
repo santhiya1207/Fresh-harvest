@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IonicModule } from '@ionic/angular';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -15,7 +14,6 @@ import { FruitsListComponent } from './fruits-list/fruits-list.component';
 import { VegetableslistComponent } from './vegetableslist/vegetableslist.component';
 import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
 import { GreenlistComponent } from './greenlist/greenlist.component';
-import { LoginPageComponent } from './login-page/login-page.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
@@ -33,7 +31,6 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     VegetableslistComponent,
     DryFruitsListComponent,
     GreenlistComponent,
-    LoginPageComponent,
     FooterComponent,
  
   ],
@@ -42,7 +39,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,ReactiveFormsModule,
-     IonicModule,
+    IonicModule,
     FormsModule,
     ReactiveFormsModule,
 

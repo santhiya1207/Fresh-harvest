@@ -12,12 +12,12 @@
     color: #fff;
     font-weight: 600;
 }
-.col-auto {
+/* .col-auto {
     padding: 8px;
     padding-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .row {
     margin: 3px;
@@ -132,4 +132,27 @@
 }
 .whoContainer{
     margin: 2rem auto;
+}
+#aboutus{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+
+@media (max-width:500px){
+    #aboutus{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+}
+@media (min-width:500px) and (max-width:600px){
+    #aboutus{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        }
+}
+@media (min-width:1001px) and (max-width:1220px){
+    #aboutus{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        }
 }
