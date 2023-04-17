@@ -37,7 +37,7 @@
         </div>
 
         <div class="addCard">
-          <button class="vegetablesAddButton" >Add
+          <button class="vegetablesAddButton">Add
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 plusIcon">
@@ -59,11 +59,10 @@
         *ngFor="let vegetableList of filteredVegetableProducts"
       >
         <div><img class="vegetablesImage" src="{{ vegetableList.image }}" /></div>
-        <div class="vegetablesName" id="productName" name="productName">{{ vegetableList.productName }}
-          
+        <div class="vegetablesName" id="productName" #myDiv>
+           {{ vegetableList.productName }}
         </div>
-  
-        <div class="BuyCard">
+          <div class="BuyCard">
           <div class="priceCard">
             <div class="vegetablesPrice">$ {{ vegetableList.productPrice }}</div>
             <div class="vegetablesWeight">{{ vegetableList.weight }}</div>
@@ -71,7 +70,7 @@
           </div>
   
           <div class="addCard">
-            <button class="vegetablesAddButton" (click)="onSubmit()">Add 
+            <button class="vegetablesAddButton" name="productName" id="{{vegetableList. productId}}" (click)="onSubmit(vegetableList)" >Add 
               <span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 plusIcon">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

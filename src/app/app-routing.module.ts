@@ -6,6 +6,8 @@ import { FruitsListComponent } from './fruits-list/fruits-list.component';
 import { VegetableslistComponent } from './vegetableslist/vegetableslist.component';
 import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
 import { GreenlistComponent } from './greenlist/greenlist.component';
+import { CartComponent } from './cart/cart.component';
+
 
 
 const routes: Routes = [
@@ -16,6 +18,7 @@ const routes: Routes = [
   {path:'DryFruits',component:DryFruitsListComponent},
   {path:'Greens',component:GreenlistComponent},
   {path:'Login',component:LoginformComponent},
+  {path:'Cart', component:CartComponent}
 
 ];
 

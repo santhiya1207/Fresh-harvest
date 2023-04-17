@@ -1,0 +1,49 @@
+<div *ngFor="let item of cartItems">
+    <div class="cartitem">
+         <div class="container border w-25 h-100 m-5 p-5  ">
+               
+                    <div class="row">
+                        <img src="{{item.image}}" width="20px" height="100%">
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Product Name : &nbsp;<b>{{item.productName}}</b> </h4>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Weight : &nbsp;<b>{{item.weight}}</b></h4>
+                            <br>
+                        </div>
+        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Price : &nbsp; <b>{{item.productPrice}}</b> &nbsp; /-</h4>
+                            <br>
+                        </div>
+        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Product Category : &nbsp; <b>{{item.productCategory}}</b></h4>
+                            <br>
+                        </div>
+        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-outline-danger" (click)="removeFromCart(item)">Remove</button>
+                        </div>
+                        <br>
+                    </div>
+        
+                </div>
+        
+            </div>
+      
+   
+
+</div>

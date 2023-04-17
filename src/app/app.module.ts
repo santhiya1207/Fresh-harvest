@@ -18,6 +18,7 @@ import { VegetableslistComponent } from './vegetableslist/vegetableslist.compone
 import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
 import { GreenlistComponent } from './greenlist/greenlist.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -35,6 +36,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     DryFruitsListComponent,
     GreenlistComponent,
     FooterComponent,
+    CartComponent,
  
   ],
   imports: [
