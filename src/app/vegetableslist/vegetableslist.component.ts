@@ -2,8 +2,11 @@ import { Component,OnInit,NgZone, ViewChild, ElementRef } from '@angular/core';
 import { ProductserviceService } from '../productservice.service';
 import { AbstractControl, Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import {Router} from '@angular/router';
+<<<<<<< HEAD
 import { CartServiceService } from '../cart-service.service';
 
+=======
+>>>>>>> origin/main
 
 @Component({
   selector: 'app-vegetableslist',
@@ -16,6 +19,7 @@ export class VegetableslistComponent {
   products:any[]=[];
   productfilter: string = "";
 
+<<<<<<< HEAD
   cartitem: FormGroup;
   
   @ViewChild('myDiv') myDiv!: ElementRef;
@@ -30,6 +34,9 @@ export class VegetableslistComponent {
       this.cartitem = this.ct.group({
         productName:['']
     })
+=======
+  constructor(private _vegetablesProductsServie: ProductserviceService,) {
+>>>>>>> origin/main
   }
   ngOnInit() {
     this.vegetableProducts = this._vegetablesProductsServie.getProduct();
@@ -44,6 +51,7 @@ export class VegetableslistComponent {
     this.productfilter = inputvalue.target.value;
     
   }
+<<<<<<< HEAD
 
   productNames:string='';
   cartItemCount:number=0;
@@ -70,4 +78,6 @@ export class VegetableslistComponent {
     // )
 
   }
+=======
+>>>>>>> origin/main
 }
