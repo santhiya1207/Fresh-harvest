@@ -13,6 +13,7 @@ mongoose
     console.error("Error connecting to mongo", err.reason);
   });
 const loginRoute = require("./routes/login.routes");
+const CartRoute = require("./routes/cart.routes");
 
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, "dist/fresh-harvest")));
 
 //API root
 app.use("/api", loginRoute);
+app.use("/api", CartRoute);
 
 //PORT
 
