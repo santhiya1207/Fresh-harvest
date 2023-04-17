@@ -1,5 +1,6 @@
 import { Component,EventEmitter} from "@angular/core";
 import { ProductserviceService } from "../productservice.service";
+import { CartServiceService } from "../cart-service.service";
 
 @Component({
   selector: "app-fruits-list",
@@ -14,7 +15,8 @@ export class FruitsListComponent {
   counter:number = 0;
 
 
-  constructor(private _fruitsProductsServie: ProductserviceService) {
+  constructor(private _fruitsProductsServie: ProductserviceService,
+    private cartService:CartServiceService) {
     this.fruitsProducts = this._fruitsProductsServie.getProduct();
     console.log("Constructor Called");
   }
@@ -31,7 +33,15 @@ export class FruitsListComponent {
     this.products = this.fruitsProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
   }
 
+<<<<<<< HEAD
+  fruitsItem:any[]=[];
+
+  onSubmit(item:any){
+    this.fruitsItem = item;
+    this.cartService.addToCart(this.fruitsItem);
+=======
   addCart(){
     this.counter++
+>>>>>>> origin/main
   }
 }

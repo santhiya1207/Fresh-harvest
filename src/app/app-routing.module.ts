@@ -6,7 +6,12 @@ import { FruitsListComponent } from './fruits-list/fruits-list.component';
 import { VegetableslistComponent } from './vegetableslist/vegetableslist.component';
 import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
 import { GreenlistComponent } from './greenlist/greenlist.component';
+<<<<<<< HEAD
+import { CartComponent } from './cart/cart.component';
+
+=======
 import { RegisterComponent } from './register/register.component';
+>>>>>>> origin/main
 
 
 const routes: Routes = [
@@ -17,7 +22,11 @@ const routes: Routes = [
   {path:'DryFruits',component:DryFruitsListComponent},
   {path:'Greens',component:GreenlistComponent},
   {path:'Login',component:LoginformComponent},
+<<<<<<< HEAD
+  {path:'Cart', component:CartComponent}
+=======
   {path:'Register',component:RegisterComponent},
+>>>>>>> origin/main
 
 ];
 

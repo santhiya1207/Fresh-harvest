@@ -1,7 +1,12 @@
-import { Component,OnInit,NgZone } from '@angular/core';
+import { Component,OnInit,NgZone, ViewChild, ElementRef } from '@angular/core';
 import { ProductserviceService } from '../productservice.service';
 import { AbstractControl, Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import {Router} from '@angular/router';
+<<<<<<< HEAD
+import { CartServiceService } from '../cart-service.service';
+
+=======
+>>>>>>> origin/main
 
 @Component({
   selector: 'app-vegetableslist',
@@ -14,7 +19,24 @@ export class VegetableslistComponent {
   products:any[]=[];
   productfilter: string = "";
 
+<<<<<<< HEAD
+  cartitem: FormGroup;
+  
+  @ViewChild('myDiv') myDiv!: ElementRef;
+  
+
+  constructor(private _vegetablesProductsServie: ProductserviceService,
+    private cartService: CartServiceService,
+    private ct:FormBuilder,
+    private ngZone:NgZone,
+    private router:Router
+    ) {
+      this.cartitem = this.ct.group({
+        productName:['']
+    })
+=======
   constructor(private _vegetablesProductsServie: ProductserviceService,) {
+>>>>>>> origin/main
   }
   ngOnInit() {
     this.vegetableProducts = this._vegetablesProductsServie.getProduct();
@@ -29,4 +51,33 @@ export class VegetableslistComponent {
     this.productfilter = inputvalue.target.value;
     
   }
+<<<<<<< HEAD
+
+  productNames:string='';
+  cartItemCount:number=0;
+  cartItems:any[]=[];
+  selectItem:any[]=[];
+
+  onSubmit(item:any){
+    this.selectItem=item;
+    console.log("selectedItem", this.selectItem);
+    console.log("filter",this.productNames)
+    this.cartService.addToCart(this.selectItem);
+    console.log(this.cartItemCount = this.cartService.getItems().length);
+    console.log("cart",this.cartService.getItems())
+    this.router.navigate(['/Cart']);
+   
+    // this.productNames = this.myDiv.nativeElement.innerHTML;
+    
+    //   console.log(this.cartitem.value);
+    // console.log(this.myDiv.nativeElement.innerHTML);
+    // console.log("product",this.productNames);
+    // this.CartService.AddCart(this.cartitem.value).subscribe(
+    //   ()=>{console.log('Data added');
+    // this.ngZone.run(()=>this.router.navigate(['/Vegetables']));}
+    // )
+
+  }
+=======
+>>>>>>> origin/main
 }
