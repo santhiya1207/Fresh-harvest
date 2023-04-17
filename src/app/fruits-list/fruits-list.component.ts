@@ -11,6 +11,8 @@ export class FruitsListComponent {
   filteredFruitsProducts: any[] = [];
   products:any[]=[];
   productfilter: string = "";
+  counter:number = 0;
+
 
   constructor(private _fruitsProductsServie: ProductserviceService) {
     this.fruitsProducts = this._fruitsProductsServie.getProduct();
@@ -27,5 +29,9 @@ export class FruitsListComponent {
     console.log(this.fruitsProducts);
     this.productfilter = inputvalue.target.value;
     this.products = this.fruitsProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
+  }
+
+  addCart(){
+    this.counter++
   }
 }
