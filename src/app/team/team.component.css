@@ -1,0 +1,14 @@
+#vegies{
+    background-image: url("../../assets/category-3.jpg");
+}
+
+img{
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#teambg{
+    background-image:linear-gradient(to top, #018d4083, #059c2686), url("../../assets/teambg2.jpg");
+}
