@@ -210,5 +210,12 @@
 }
 .search{
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
 }
+.cart{
+    width: 45px;
+    height: 45px;
+    stroke: rgba(2, 88, 32, 0.953);;
+  }
