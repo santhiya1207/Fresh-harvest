@@ -3,7 +3,7 @@
 }
 
 img{
-    height: 370px;
+    height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -11,4 +11,12 @@ img{
 
 #teambg{
     background-image:linear-gradient(to top, #018d4083, #059c2686), url("../../assets/teambg2.jpg");
+}
+
+.benefits{
+    text-align: center;
+    margin: 2.4rem auto;
+    font-size: 36px;
+    color: rgba(2, 88, 32, 0.953);
+    font-weight: 600;
 }
