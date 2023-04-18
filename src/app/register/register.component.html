@@ -1,6 +1,6 @@
 <div class="container p-0">
     <div class="row">
-        <!-- left side image -->
+        
       <div class="col  col-sm-2  p-0 w-50">
         <div class="signupLeftSide">
           <div class="title">
@@ -9,12 +9,12 @@
         </div>
         <br>
       </div>
-      <!-- Login page input box content -->
+      
       <div class="col w-50 p-0">
         <div class="signupRightSide">
           <h2>Sign Up</h2>
           <form class="form-group" [formGroup]="registerForm">
-            <!-- userName -->
+            
             <div class="form-group">
               <label for="userName">UserName</label>
               <input class="form-control textbox" id="userName" type="text" placeholder="UserName" name="userName" formControlName="userName" [ngClass]="{'is-invalid': registered && r['userName'].errors}"/>
@@ -26,7 +26,7 @@
             </div>
   
         
-                <!-- Password -->
+                
             <div class="form-group">
               <label for="password">Password</label>
               <input class="form-control password passwordfield" id="password" type="password" placeholder="Password"
@@ -39,7 +39,7 @@
                </div>
             </div>
            
-            <!-- Confirm Password -->
+            
              <div class="form-group">
               <label for=" confirmpassword">Confirm Password</label>
               <input class="form-control password passwordfield" id="confirmpassword" type="password" placeholder="Password"
@@ -50,20 +50,16 @@
               </div>
             </div>
             <div class="text-success padding">{{ successMessage }}</div>
-             <!-- login button -->
+             
             <div>
               <button class="btn btn-success loginBtn" (click)="register()">Register</button>
             </div>
-            <!-- Signup button -->
+            
             <div>
               <a class="btn signinBtn" [routerLink]="['/Login']">Login Here</a>
           </div>
-          <!--  -->
+          
           </form>
         </div>
       </div>
-    </div>
-
-    <div>
-        <router-outlet></router-outlet>
     </div>

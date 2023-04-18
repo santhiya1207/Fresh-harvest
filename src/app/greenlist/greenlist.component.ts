@@ -12,13 +12,16 @@ export class GreenlistComponent {
   filteredGreensProducts: any[] = [];
   products:any[]=[];
   productfilter: string = "";
+  counter:number[] = [];
 
-  constructor(private _vegetablesProductsServie: ProductserviceService,
+  constructor(private _greensProductsServie: ProductserviceService,
     private cartService:CartServiceService) {
     console.log("Constructor Called");
+     this.grrensProducts = this._greensProductsServie.getProduct();
+      this.counter = Array(this.grrensProducts.length).fill(0);
   }
   ngOnInit() {
-    this.grrensProducts = this._vegetablesProductsServie.getProduct();
+   
     this.filteredGreensProducts = this.grrensProducts.filter(
       (greens) => greens.productCategory === "Greens"
     );
@@ -31,8 +34,9 @@ export class GreenlistComponent {
 
   greenItems:any[]=[];
 
-  onSubmit(item:any){
-    this.greenItems=item;
-    this.cartService.addToCart(this.greenItems);
+ onSubmit(item: any, index: number) {
+    this.cartService.addToCart(item);
+    this.counter[index]++;
+    console.log(this.counter[index]);
   }
 }

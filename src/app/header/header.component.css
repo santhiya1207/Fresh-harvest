@@ -82,3 +82,14 @@
 header.is-scrolled {
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
 }
+.cartNav{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  padding: 0;
+}
+.cart{
+  width: 20px;
+  height: 20px;
+}
