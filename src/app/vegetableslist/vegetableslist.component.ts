@@ -1,29 +1,14 @@
 import {
   Component,
-  NgZone,
   ViewChild,
   ElementRef,
 } from "@angular/core";
-
-import { ProductserviceService } from "../productservice.service";
-
-import {
-  AbstractControl,
-  Validators,
-  FormControl,
-  FormGroup,
-  FormBuilder,
-} from "@angular/forms";
-
-import { Router } from "@angular/router";
-
-import { CartServiceService } from "../cart-service.service";
+import { ProductserviceService } from "../service/productservice.service";
+import { CartServiceService } from "../service/cart-service.service";
 
 @Component({
   selector: "app-vegetableslist",
-
   templateUrl: "./vegetableslist.component.html",
-
   styleUrls: ["./vegetableslist.component.css"],
 })
 export class VegetableslistComponent {

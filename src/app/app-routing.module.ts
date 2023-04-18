@@ -8,6 +8,7 @@ import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.compon
 import { GreenlistComponent } from './greenlist/greenlist.component';
 import { RegisterComponent } from './register/register.component';
 import { AddcartComponent } from './addcart/addcart.component';
+import { TeamComponent } from './team/team.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'Login',component:LoginformComponent},
   {path:'Register',component:RegisterComponent},
   {path:'Cart', component:AddcartComponent},
+  {path:'Team', component:TeamComponent},
 ];
 
 @NgModule({

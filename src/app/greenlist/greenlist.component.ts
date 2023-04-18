@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductserviceService } from '../productservice.service';
-import { CartServiceService } from '../cart-service.service';
+import { ProductserviceService } from '../service/productservice.service';
+import { CartServiceService } from '../service/cart-service.service';
 
 @Component({
   selector: 'app-greenlist',
