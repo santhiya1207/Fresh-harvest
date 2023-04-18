@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CartServiceService } from '../cart-service.service';
+import { CartServiceService } from '../service/cart-service.service';
 
 @Component({
   selector: 'app-addcart',
@@ -10,6 +10,8 @@ export class AddcartComponent {
   cartItems:any[]=[];
   productPrice:number= 0;
   counters: number[] = [];
+  
+  showCart:boolean = false;
 
   constructor(private cartService: CartServiceService) {
     console.log("cartItem",this.cartItems)
@@ -44,5 +46,10 @@ export class AddcartComponent {
       total += this.counters[i] * this.cartItems[i].productPrice;
     }
     return total;
+  }
+
+  order(){
+    window.alert("Order Placed!");
+    window.location.href= "/Home";
   }
 }

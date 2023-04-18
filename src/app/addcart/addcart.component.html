@@ -1,4 +1,8 @@
-<div class="addCartContainer">
+<div class="emptyCart" *ngIf="cartItems.length === 0">
+  <img  src="../../assets/empty-cart.png">
+</div>
+
+<div class="addCartContainer" *ngIf="cartItems.length > 0">
         <table class="cartListcontainer">
             <thead>
                 <tr>
@@ -49,6 +53,7 @@
             <div class="totalTitle">Total</div>
         <div class="totalPrice">Rs.{{getTotal()}}</div>
       </div>
-        <button class="proceedButton">Proceed To Checkout</button>
+        <button class="proceedButton" (click)="order()">Proceed To Checkout</button>
       </div>
 </div>
+
