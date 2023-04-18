@@ -1,0 +1,75 @@
+.addCartContainer{
+    padding: 4.8rem;
+}
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+td, th {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgb(189, 178, 178);
+}
+th{
+    padding: 20px;
+    background-color: rgba(2, 88, 32, 0.953);
+    color: #fff;
+}
+.cartPlus,.cartMinus{
+    width: 25px;
+    height: 25px;
+    border-radius: 48px;
+    background-color: rgba(2, 88, 32, 0.953);
+    stroke: white;
+    cursor: pointer;
+}
+.cartQuantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.selectedProductImage{
+    width: 100px;
+    height: 100px;
+}
+.totalAmount{
+    width: 350px;
+    margin: 50px 0px 0px 0px;
+    border: 1px solid lightgray;
+}
+.cartTotalTitle{
+    font-size: 22px;
+    text-align: center;
+    padding-top: 15px;
+    color: rgba(2, 88, 32, 0.953);
+}
+.totalContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+.totalTitle,.totalPrice{
+    color: black;
+    font-size: 18px;
+}
+.proceedButton{
+    background-color: rgba(2, 88, 32, 0.953);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.proceedButton:hover{
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(2, 88, 32, 0.953);
+    margin: 20px;
+    color: #111;
+    font-weight: 600;
+}

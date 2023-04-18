@@ -1,6 +1,6 @@
 <div class="container p-0">
     <div class="row">
-        <!-- left side image -->
+        
       <div class="col p-0 w-50">
         <div class="loginLeftSide">
           <div class="title">
@@ -9,12 +9,12 @@
         </div>
         <br>
       </div>
-      <!-- Login page input box content -->
+      
       <div class="col p-0 w-50">
         <div class="loginRightSide">
           <h2>Login</h2>
           <form class="form-group input" [formGroup]="loginForm">
-            <!-- userName -->
+            
 
             <div class="form-group  justify-content-center">
               <label for="userName">UserName</label>
@@ -36,11 +36,11 @@
                 <div *ngIf="f['password'].errors['required']" >Enter Valid Password</div>
                </div>
             </div>
-             <!-- login button -->
+             
             <div>
               <button class="btn btn-success loginBtn" (click)="onSubmit()">Login</button>
             </div>
-            <!-- Signup button -->
+            
             <div>
               <a class="btn signinBtn" [routerLink]="['/Register']">Don't have an account? Register Here</a>
           </div>

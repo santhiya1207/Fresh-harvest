@@ -9,10 +9,10 @@
             <div class="col-lg-12">
               <div class="row search">
                 <div class="col p-0">
-                  <input type="text" class="form-control search-slt" placeholder="Search your fruit name / price" style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"(change)="getCategoryDetails($event)" [(ngModel)]="productfilter">
+                  <input type="text" class="form-control search-slt" placeholder="Search your fruit name / price" style="border-radius: 8px;"(change)="getCategoryDetails($event)" [(ngModel)]="productfilter">
                 </div>
                 <div class="col-lg-3 p-0">
-                  <button type="button" class="btn btn-success wrn-btn" style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;">Search</button>
+                  <button type="button" class="btn btn-success wrn-btn" style="border-radius: 8px;">Search</button>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@
     <div class="dryFruitsProductsListContainer">
       <div
         class="dryFruitsProductsList"
-        *ngFor="let dryFruitsList of filteredDryFruitsProducts"
+        *ngFor="let dryFruitsList of filteredDryFruitsProducts; let i = index"
       >
         <div><img class="dryFruitsImage" src="{{ dryFruitsList.image }}" /></div>
         <div class="dryFruitsName">{{ dryFruitsList.productName }}</div>
@@ -70,7 +70,7 @@
           </div>
   
           <div class="addCard">
-            <button class="dryFruitsAddButton" (click)="onSubmit(dryFruitsList)">Add 
+            <button class="dryFruitsAddButton" (click)="onSubmit(dryFruitsList,i)">Add 
               <span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 plusIcon">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

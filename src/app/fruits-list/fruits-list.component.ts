@@ -12,13 +12,15 @@ export class FruitsListComponent {
   filteredFruitsProducts: any[] = [];
   products:any[]=[];
   productfilter: string = "";
-  counter:number = 0;
+  counter:number[] = [];
 
 
   constructor(private _fruitsProductsServie: ProductserviceService,
     private cartService:CartServiceService) {
     this.fruitsProducts = this._fruitsProductsServie.getProduct();
     console.log("Constructor Called");
+
+    this.counter = Array(this.fruitsProducts.length).fill(0);
   }
   ngOnInit() {
     console.log("fruit", this.fruitsProducts);
@@ -33,15 +35,11 @@ export class FruitsListComponent {
     this.products = this.fruitsProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
   }
 
-<<<<<<< HEAD
   fruitsItem:any[]=[];
 
-  onSubmit(item:any){
-    this.fruitsItem = item;
-    this.cartService.addToCart(this.fruitsItem);
-=======
-  addCart(){
-    this.counter++
->>>>>>> origin/main
+  onSubmit(item: any, index: number) {
+    this.cartService.addToCart(item);
+    this.counter[index]++;
+    console.log(this.counter[index]);
   }
 }

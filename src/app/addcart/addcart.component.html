@@ -1,0 +1,54 @@
+<div class="addCartContainer">
+        <table class="cartListcontainer">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Image</th>
+                    <th>Product Price</th>
+                    <th>Product Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="selectedProduct" *ngFor="let item of cartItems ;let i = index;">
+                    <td>{{ item.productName }}</td>
+                    <td>
+                      <img class="selectedProductImage" src="{{item.image}}">
+                    </td>
+                    <td>{{item.productPrice}}</td>
+                    <td>
+                      <div class="cartQuantity">
+                        <div (click)="updateCounter(i, false)">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cartMinus">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                          </svg> 
+                        </div>
+                        <div>{{ counters[i] }}</div>
+                      
+                        <div (click)="updateCounter(i, true)">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cartPlus">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>    
+                        </div>
+                      </div>
+                     
+                    </td>
+                    <td>{{ counters[i] * item.productPrice }}</td>
+                    <td>
+                    <button class="btn btn-outline-danger" (click)="removeFromCart(item)">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="totalAmount">
+          <div class="cartTotalTitle">Cart Total</div>
+          <div class="totalContainer">
+            <div class="totalTitle">Total</div>
+        <div class="totalPrice">Rs.{{getTotal()}}</div>
+      </div>
+        <button class="proceedButton">Proceed To Checkout</button>
+      </div>
+</div>
