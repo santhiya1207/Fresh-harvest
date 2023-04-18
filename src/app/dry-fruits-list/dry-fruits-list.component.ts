@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductserviceService } from '../productservice.service';
+import { CartServiceService } from '../cart-service.service';
 
 @Component({
   selector: 'app-dry-fruits-list',
@@ -11,12 +12,16 @@ export class DryFruitsListComponent {
   filteredDryFruitsProducts: any[] = [];
   products:any[]=[];
   productfilter: string = "";
+  counter:number[] = [];
 
-  constructor(private _vegetablesProductsServie: ProductserviceService) {
+  constructor(private _dryFruitsProductsServie: ProductserviceService,
+    private cartService:CartServiceService) {
     console.log("Constructor Called");
+    this.dryFruitsProducts = this._dryFruitsProductsServie.getProduct();
+    this.counter = Array(this.dryFruitsProducts.length).fill(0);
   }
   ngOnInit() {
-    this.dryFruitsProducts = this._vegetablesProductsServie.getProduct();
+    
     this.filteredDryFruitsProducts = this.dryFruitsProducts.filter(
       (dryFruits) => dryFruits.productCategory === "Dryfruits"
     );
@@ -25,5 +30,13 @@ export class DryFruitsListComponent {
     console.log(this.dryFruitsProducts);
     this.productfilter = inputvalue.target.value;
     this.products = this.dryFruitsProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
+  }
+
+  dryFruitsItem:any[]=[];
+
+  onSubmit(item: any, index: number) {
+    this.cartService.addToCart(item);
+    this.counter[index]++;
+    console.log(this.counter[index]);
   }
 }

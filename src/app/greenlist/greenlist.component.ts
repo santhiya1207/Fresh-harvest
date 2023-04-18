@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductserviceService } from '../productservice.service';
+import { CartServiceService } from '../cart-service.service';
 
 @Component({
   selector: 'app-greenlist',
@@ -11,12 +12,16 @@ export class GreenlistComponent {
   filteredGreensProducts: any[] = [];
   products:any[]=[];
   productfilter: string = "";
+  counter:number[] = [];
 
-  constructor(private _vegetablesProductsServie: ProductserviceService) {
+  constructor(private _greensProductsServie: ProductserviceService,
+    private cartService:CartServiceService) {
     console.log("Constructor Called");
+     this.grrensProducts = this._greensProductsServie.getProduct();
+      this.counter = Array(this.grrensProducts.length).fill(0);
   }
   ngOnInit() {
-    this.grrensProducts = this._vegetablesProductsServie.getProduct();
+   
     this.filteredGreensProducts = this.grrensProducts.filter(
       (greens) => greens.productCategory === "Greens"
     );
@@ -25,5 +30,13 @@ export class GreenlistComponent {
     console.log(this.grrensProducts);
     this.productfilter = inputvalue.target.value;
     this.products = this.grrensProducts.filter((a) => (a.productName==this.productfilter)||(a.productPrice==this.productfilter));  
+  }
+
+  greenItems:any[]=[];
+
+ onSubmit(item: any, index: number) {
+    this.cartService.addToCart(item);
+    this.counter[index]++;
+    console.log(this.counter[index]);
   }
 }

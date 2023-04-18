@@ -19,6 +19,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { TeamComponent } from './team/team.component'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddcartComponent } from './addcart/addcart.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     RegisterComponent,
     TeamComponent,
- 
+    AddcartComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ReactiveFormsModule,
     HttpClientModule,
     FontAwesomeModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

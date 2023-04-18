@@ -7,6 +7,7 @@ import { VegetableslistComponent } from './vegetableslist/vegetableslist.compone
 import { DryFruitsListComponent } from './dry-fruits-list/dry-fruits-list.component';
 import { GreenlistComponent } from './greenlist/greenlist.component';
 import { RegisterComponent } from './register/register.component';
+import { AddcartComponent } from './addcart/addcart.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path:'Greens',component:GreenlistComponent},
   {path:'Login',component:LoginformComponent},
   {path:'Register',component:RegisterComponent},
-
+  {path:'Cart', component:AddcartComponent},
 ];
 
 @NgModule({
